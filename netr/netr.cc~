@@ -1,0 +1,71 @@
+
+#define _GNU_SOURCE
+
+#include <arpa/inet.
+#include <sys/socket.
+#include <netdb.
+#include <ifaddrs.
+#include <stdio.
+#include <stdlib.
+#include <unistd.
+#include <linux/if_link.h>
+
+
+#define Sucesso (int)0;
+
+
+namespace NetRSIS
+
+{
+
+  class NetRPrincipal
+
+  {
+
+  public:
+
+
+   NetRPrincipal();
+  ~NetRPrincipal();
+
+
+  };
+
+};
+
+//******************************************
+
+
+NetRSIS::NetRPrincipal::NetRPrincipal
+( )
+
+{
+
+  struct ifaddrs *ifaddr, *ifa;
+
+  int family, s, n;
+
+  char host[NI_MAXHOST];
+
+
+
+
+
+
+}
+
+
+
+
+int main
+( )
+
+{
+
+
+  NetRSIS::NetRPrincipal  *nto  = new  NetRSIS::NetRPrincipal( );
+  delete nto;
+  
+
+  return Sucesso;
+}
